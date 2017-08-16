@@ -1,0 +1,25 @@
+font-family: Ptsans; /* Гарнитура шрифта */
+    src: url(fonts/ptsans.woff); /* Путь к файлу со шрифтом */
+  }
+
+body{
+	font-size: 14px;
+	line-height: 16px;
+	color: #c8c8c8;
+	font-weight: 400;
+	font-family: Ptsans, Arial;
+}
+
+h1 .heading{
+	font-size: 28px;
+	line-height: 32px;
+	color: #FFF;
+	font-weight: 700;
+}
+
+h2 .sub-heading{
+	font-size: 16px;
+	line-height: 18px;
+	color: black;
+	font-weight: 600;
+}
