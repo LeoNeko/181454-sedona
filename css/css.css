@@ -2,6 +2,37 @@ font-family: Ptsans; /* Гарнитура шрифта */
     src: url(fonts/ptsans.woff); /* Путь к файлу со шрифтом */
   }
 
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Ptsans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+ }
+
+header, 
+main,
+footer{
+	width: 1200px;
+	
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4{
+	padding: 0;
+	margin: 0;
+}
+
 
 .visually-hidden{
   position: absolute; 
@@ -11,15 +42,18 @@ font-family: Ptsans; /* Гарнитура шрифта */
   margin: -1px; padding: 0; border: 0;	
 }
 
+/****** menu ********/
 
-body{
-	font-size: 14px;
-	line-height: 16px;
-	color: #c8c8c8;
-	font-weight: 400;
-	font-family: Ptsans, Arial;
+nav ul{
+	list-style-type: none;
+	text-transform: uppercase;
+}
+li a{
+	font-weight: 700;
 }
 
+
+/********** main ********/
 h1 .heading{
 	font-size: 28px;
 	line-height: 32px;
@@ -32,4 +66,72 @@ h2 .sub-heading{
 	line-height: 18px;
 	color: black;
 	font-weight: 600;
+}
+
+.gate-devil .second-screen-description,
+.true-town .first-screen-description{
+	width: 400px;
+	height: 255px;
+	
+	color: #FFF;
+	
+	background-color: #81b3d2;
+}
+
+.second-screen-description h2,
+.second-screen-description span,
+.second-screen-description p,
+.first-screen-description h2,
+.first-screen-description span,
+.first-screen-description p{
+	margin-right: auto;
+	margin-left: auto;
+	
+	text-align: center;
+}
+
+.first-screen-description h2{
+	width: 120px;
+	
+	padding-top: 48px;
+}
+
+.first-screen-description p{
+	width: 10,86cm;
+}
+
+.description-advantages span,
+.advantages h2{
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.third-screen{
+	width: 100%;
+	height: 255px;
+	background-color: #eeeeee;
+}
+.advantages{
+	
+}
+
+.popup-form{
+	width: 570px;
+	
+}
+
+.popup-form h3{
+	height: 86px;
+	
+	color: #FFF;
+	
+	background-color: #766357;
+}
+
+.hotel-input input[type="submit"]{
+	width: 455px;
+	height: 55px;
+		
+	border-radius: 0;
 }
