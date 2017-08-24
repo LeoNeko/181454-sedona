@@ -44,13 +44,17 @@ h1, h2, h3, h4{
 
 /****** menu ********/
 
-nav ul{
+nav ul,
+.sort-hotel ul{
 	list-style-type: none;
 	text-transform: uppercase;
 }
-li a{
+
+nav li a{
 	font-weight: 700;
 }
+
+
 
 
 /********** main ********/
@@ -129,9 +133,33 @@ h2 .sub-heading{
 	background-color: #766357;
 }
 
+.filter-hotel{
+	background: url(img/categories_header.jpg);
+}
+
+.filter-hotel fieldset{
+	border: 0;
+}
+
 .hotel-input input[type="submit"]{
 	width: 455px;
 	height: 55px;
 		
 	border-radius: 0;
+}
+
+.hotel-descriprion .detailed{
+	padding: 5px;
+	
+	color: #FFF;
+	
+	background-color: #81b3d2;
+}
+
+.hotel-descriprion .book{
+	padding: 5px;
+	
+	color: #FFF;
+	
+	background-color: #766357;
 }
