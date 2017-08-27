@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/css.css">
-    <link rel="stylesheet" type="text/css" href="normolize/css.css">
+    <link rel="stylesheet" type="text/css" href="css/normolize.css">
   </head>
   <body>
 	<header>
@@ -21,60 +21,64 @@
 	</header>
   	<main>
 		<section class="filter-hotel">
-				<form>
-					<fieldset>
-						<legend>Инфраструктура:</legend>
-						<input type="checkbox" checked>Бассейн<br>
-						<input type="checkbox">Парковка<br>
-						 <input type="checkbox">WI-FI<br>
-					</fieldset>
-					<fieldset>
-						 <legend>Тип жилья:</legend>
-						 <input type="checkbox" checked>Гостиница<br>
-						 <input type="checkbox" checked>Мотель<br>
-						 <input type="checkbox" checked>апартаменты<br>
-					</fieldset>
-					<fieldset>
-						 <legend>Стоимость в сутки(Р):</legend>
-						 <input type="range">
-						 <input type="button" value="Показать">
-					</fieldset>
-				</form>
+			<form>
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<input type="checkbox" checked>Бассейн<br>
+					<input type="checkbox">Парковка<br>
+					<input type="checkbox">WI-FI<br>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<input type="checkbox" checked>Гостиница<br>
+					<input type="checkbox" checked>Мотель<br>
+					<input type="checkbox" checked>апартаменты<br>
+				</fieldset>
+				<fieldset>
+					<legend>Стоимость в сутки(Р):</legend>
+					<input type="range">
+					<input type="button" value="Показать">
+				</fieldset>
+			</form>
 		</section>
-		<section class="sort-hotel">
-			<ul>
-				<li>Сортировка:</li>
-				<li><a href="#">по цене</a></li>
-				<li><a href="#">по типу</a></li>
-				<li><a href="#">по рейтингу</a></li>
-			</ul>
-		</section>
-			<section clas="hotel-element">
-				<img src="img/categories_06.png">
-				<section class="hotel-descriprion">
-					<h3>Amara Resort & SPA</h3>
-					<span>Гостиница</span><span>От 4000Р</span>
-					<a class="detailed" href="#">Подробнее</a>
-					<a class="book" href="#">Забронировать</a>
+		<div class="content-categories">
+			<section class="sort-hotel">
+				<ul>
+					<li>Сортировка:</li>
+					<li><a href="#">по цене</a></li>
+					<li><a href="#">по типу</a></li>
+					<li><a href="#">по рейтингу</a></li>
+				</ul>
 			</section>
-			<section clas="hotel-element">
-				<img src="img/categories_10.png">
-				<section class="hotel-descriprion">
-					<h3>Desert quail inn</h3>
-					<span>Мотель</span><span>От 3000Р</span>
-					<a class="detailed" href="#">Подробнее</a>
-					<a class="book" href="#">Забронировать</a>
-			</section>
-			<section clas="hotel-element">
-				<img src="img/categories_13.png">
-				<section class="hotel-descriprion">
-					<h3>Villas at poco diablo</h3>
-					<span>Апартаменты</span><span>От 2000Р</span>
-					<a class="detailed" href="#">Подробнее</a>
-					<a class="book" href="#">Забронировать</a>
-			</section>
-		</section>
-  	</main>
+				<section clas="hotel-element">
+					<img src="img/categories_06.png">
+					<div class="hotel-descriprion">
+						<h3>Amara Resort & SPA</h3>
+						<span>Гостиница</span><span>От 4000Р</span>
+						<a class="detailed" href="#">Подробнее</a>
+						<a class="book" href="#">Забронировать</a>
+					</div>
+				</section>
+				<section clas="hotel-element">
+					<img src="img/categories_10.png">
+					<div class="hotel-descriprion">
+						<h3>Desert quail inn</h3>
+						<span>Мотель</span><span>От 3000Р</span>
+						<a class="detailed" href="#">Подробнее</a>
+						<a class="book" href="#">Забронировать</a>
+					</div>
+				</section>
+				<section clas="hotel-element">
+					<img src="img/categories_13.png">
+					<div class="hotel-descriprion">
+						<h3>Villas at poco diablo</h3>
+						<span>Апартаменты</span><span>От 2000Р</span>
+						<a class="detailed" href="#">Подробнее</a>
+						<a class="book" href="#">Забронировать</a>
+					</div>
+				</section>
+			</div>
+		</main>
 	<footer>
 		<a href="#"><span>#visitsedona</span></a>
 		<div class="sochial-links">

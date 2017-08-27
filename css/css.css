@@ -1,6 +1,9 @@
-font-family: Ptsans; /* Гарнитура шрифта */
-    src: url(fonts/ptsans.woff); /* Путь к файлу со шрифтом */
-  }
+@font-face{
+
+font-family: 'Ptsans'; /* Гарнитура шрифта */
+src: url(fonts/ptsans.woff); /* Путь к файлу со шрифтом */
+  
+}
 
 body {
   margin: 0;
@@ -23,6 +26,10 @@ footer{
 	margin-left: auto;
 }
 
+header{
+	position: relative;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -31,6 +38,14 @@ a {
 h1, h2, h3, h4{
 	padding: 0;
 	margin: 0;
+}
+
+.enter-text-section h1{
+	width: 600px;
+	text-align: center;
+	font-size: 21px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -48,13 +63,39 @@ nav ul,
 .sort-hotel ul{
 	list-style-type: none;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 15.5px 0;
+}
+
+nav ul::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav ul li{
+	display: inline;
 }
 
 nav li a{
 	font-weight: 700;
 }
 
+.left-side{
+	float: left;
+	margin-left: 72px;
+}
 
+.right-side{
+	float: right;
+	margin-right: 72px;
+}
+
+header img{
+	position: absolute;
+	top: 0;
+	left: 531px;
+}
 
 
 /********** main ********/
@@ -162,4 +203,65 @@ h2 .sub-heading{
 	color: #FFF;
 	
 	background-color: #766357;
+}
+
+
+.first-screen,
+.third-screen,
+.second-screen{
+	display: flex;	
+}
+
+.first-screen-img img,
+.gate-devil-photo img,
+.second-screen,
+.first-screen{
+	height: 255px;
+}
+
+.description-advantages{
+	display: flex;
+	justify-content: space-around;
+	height: 325px;
+    align-items: center;
+}
+
+.description-advantages .advantages{
+	width: 300px;
+}
+
+.advantages img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.advantages span{
+	display: block;
+	text-align: center;
+
+}
+
+.filter-hotel{
+	height: 273px;
+	background-image: url(../img/categories_header.jpg);
+}
+
+.content-categories{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer{
+	position: relative;
+	
+	/*height: 593px;*/
+	width: 1200px;
+}
+
+.footer .map-hover{
+	position: absolute;
+	bottom: 0;
+	
+	height: 120px;
+	background-color: rgba(255, 255, 255,50);
 }

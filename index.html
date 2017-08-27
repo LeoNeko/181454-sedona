@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/css.css">
-    <link rel="stylesheet" type="text/css" href="normolize/css.css">
+    <link rel="stylesheet" type="text/css" href="css/normolize.css">
   </head>
   <body>
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li class="left-side"><a href="#">Информация</a></li>
+				<li class="left-side"><a href="#">Фото и Видео</a></li>
+				<li class="right-side"><a href="#">Карта штата</a></li>
+				<li class="right-side"><a href="#">Гостиницы</a></li>
 			</ul>
 		</nav>
 		<img src="img/logo.png">
@@ -25,7 +25,7 @@
   		<section class="jumbotron">
   			<img src="img/header.jpg">
   		</section>
-  		<section clas="enter-text-section">
+  		<section class="enter-text-section">
   			<h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
   			<p>Рассмотрим 5 причин, по которым седона круче, чем гранд Каньон!</p>
   		</section>
@@ -35,32 +35,36 @@
   				<span>№1</span>
   				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
   			</div>
-  			<img src="img/index_06.jpg">
+  			<div class="first-screen-img">
+  				<img src="img/index_06.jpg">	
+  			</div>
 		</section>
  		<section class="description-advantages">
-  				<div>
+  				<div class="advantages">
   					<img src="img/icon_home.png">
   					<span>Жилье</span>
   					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
   				</div>
-  				<div>
+  				<div class="advantages">
   					<img src="img/icon_food.png">
   					<span>Еда</span>
-  					<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+  					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
   				</div>
-  				<div>
+  				<div class="advantages">
   					<img src="img/icon_souvenirs.png">
   					<span>Сувениры</span>
   					<p>Не только китайского, но и местного производства!</p>
   				</div>
   		</section>
   		<section class="second-screen gate-devil">
-  			<img src="img/index_19.jpg">
-  			<section class="second-screen-description">
+  			<div class="gate-devil-photo">
+  				<img src="img/index_19.jpg">
+  			</div>
+  			<div class="second-screen-description">
   					<h2>Там есть мост дьявола</h2>
   					<span>№2</span>
   					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-  			</section>
+  			</div>
   		</section>
   		<section class="third-screen">
   			<div class="advantages">
@@ -104,13 +108,19 @@
   		</section>
   	</main>
 	<footer>
-		<a href="#"><span>#visitsedona</span></a>
-		<div class="sochial-links">
-			<a href="#"><span class="vk"></span></a>
-			<a href="#"><span class="facebook"></span></a>
-			<a href="#"><span class="twitter"></span></a>
+		<div>
+			<img src="img/sedona-map.png">
 		</div>
-		<img src="img/htmlacademy.png">
+		
+		<div class="map-hover">
+			<a href="#"><span>#visitsedona</span></a>
+			<div class="sochial-links">
+				<a href="#"><span class="vk"></span></a>
+				<a href="#"><span class="facebook"></span></a>
+				<a href="#"><span class="twitter"></span></a>
+			</div>
+			<img src="img/htmlacademy.png">	
+		</div>
 	</footer>
   </body>
 </html>
