@@ -3,25 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" type="text/css" href="css/css.css">
     <link rel="stylesheet" type="text/css" href="css/normolize.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
   </head>
   <body>
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li><a class="left-side" href="#">Информация</a></li>
+				<li><a class="left-side" href="#">Фото и Видео</a></li>
+				<li><a class="right-side" href="#">Карта штата</a></li>
+				<li><a class="right-side" href="#">Гостиницы</a></li>
 			</ul>
 			<img src="img/logo.png">
 		</nav>
 	</header>
   	<main>
 		<section class="filter-hotel">
-			<form>
+			<form class="filter-hotel-form">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
 					<input type="checkbox" checked>Бассейн<br>
@@ -44,6 +43,7 @@
 		<div class="content-categories">
 			<section class="sort-hotel">
 				<ul>
+					<li>Найдено 3</li>
 					<li>Сортировка:</li>
 					<li><a href="#">по цене</a></li>
 					<li><a href="#">по типу</a></li>
@@ -79,14 +79,18 @@
 				</section>
 			</div>
 		</main>
-	<footer>
-		<a href="#"><span>#visitsedona</span></a>
-		<div class="sochial-links">
-			<a href="#"><span class="vk"></span></a>
-			<a href="#"><span class="facebook"></span></a>
-			<a href="#"><span class="twitter"></span></a>
-		</div>
-		<img src="img/htmlacademy.png">
-	</footer>
+		<footer>
+			<div class="heshteg">
+				<a href="#"><span>#visitsedona</span></a>
+			</div>
+			<div class="sochial-links">
+				<a class="social" href="#"><span class="vk"></span></a>
+				<a class="social" href="#"><span class="facebook"></span></a>
+				<a class="social" href="#"><span class="twitter"></span></a>
+			</div>
+			<div class="academy-link">
+				<a href="#"><img src="img/htmlacademy.png"></a>	
+			</div>
+		</footer>
   </body>
 </html>

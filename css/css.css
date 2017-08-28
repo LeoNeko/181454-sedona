@@ -40,12 +40,18 @@ h1, h2, h3, h4{
 	margin: 0;
 }
 
-.enter-text-section h1{
+
+.jumbotron{
+	margin-bottom: 60px;	
+}
+
+.title-site{
 	width: 600px;
 	text-align: center;
 	font-size: 21px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 20px;
 }
 
 
@@ -59,12 +65,20 @@ h1, h2, h3, h4{
 
 /****** menu ********/
 
+.sort-hotel{
+	
+}
+
 nav ul,
 .sort-hotel ul{
 	list-style-type: none;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 15.5px 0;
+}
+
+.sort-hotel ul li{
+	display: inline;
 }
 
 nav ul::after{
@@ -115,12 +129,24 @@ h2 .sub-heading{
 
 .gate-devil .second-screen-description,
 .true-town .first-screen-description{
-	width: 400px;
+	width: 100%;
 	height: 255px;
 	
 	color: #FFF;
 	
 	background-color: #81b3d2;
+}
+
+.enter-text-section p{
+	width: 600px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 44px;
+	
+	color: #333333;
+	font-weight: 300;
+	text-align: center;
 }
 
 .second-screen-description h2,
@@ -135,14 +161,15 @@ h2 .sub-heading{
 	text-align: center;
 }
 
-.first-screen-description h2{
-	width: 120px;
+.benefit-title{
+	width: 180px;
 	
 	padding-top: 48px;
 }
 
-.first-screen-description p{
-	width: 10,86cm;
+.benefit-description{
+	width: 340px;
+	font-weight: 100;
 }
 
 .description-advantages span,
@@ -205,6 +232,10 @@ h2 .sub-heading{
 	background-color: #766357;
 }
 
+.filter-hotel-form{
+	display: flex;
+	justify-content: space-between;
+}
 
 .first-screen,
 .third-screen,
@@ -253,15 +284,41 @@ h2 .sub-heading{
 
 .footer{
 	position: relative;
-	
-	/*height: 593px;*/
 	width: 1200px;
 }
 
-.footer .map-hover{
-	position: absolute;
-	bottom: 0;
+footer{
+	display: flex !important;
+	justify-content: space-around;
+	align-items: center;
+
+	margin-right: auto;
+	margin-left: auto;
 	
 	height: 120px;
 	background-color: rgba(255, 255, 255,50);
+}
+
+.heshteg{
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.heshteg,
+.academy-link{
+	width: 240px;
+}
+
+.sochial-links{
+	text-align:center;
+	width: 400px;
+}
+
+footer .social{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    background: #81b3d2;
+    vertical-align: middle;	
 }
