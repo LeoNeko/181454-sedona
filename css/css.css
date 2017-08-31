@@ -71,7 +71,7 @@ h1, h2, h3, h4{
 /****** menu ********/
 
 .sort-hotel{
-	
+	padding: 0 66px;
 }
 
 nav ul{
@@ -152,6 +152,7 @@ h2 .sub-heading{
 	
 	background-color: #81b3d2;
 }
+
 
 .enter-text-section p{
 	width: 600px;
@@ -316,6 +317,12 @@ h2 .sub-heading{
 	background: url(../img/index_06.jpg) no-repeat 100% 100%;
 }
 
+.second-screen{
+	display: flex;
+    justify-content: flex-end;
+	background: url(../img/index_19.jpg) no-repeat 0 0;
+}
+
 .description-advantages,
 .third-screen{
 	display: flex;
@@ -333,7 +340,7 @@ third-screen{
 
 .description-advantages .advantages,
 .third-screen .advantages{
-	width: 33%;
+	width: 33.33333%;
 }
 
 .advantages img{
@@ -372,22 +379,33 @@ third-screen{
 	background-image: url(../img/categories_header.jpg);
 }
 
+legend{
+	color: #FFF;
+}
+
+input[type="checkbox"] + label{
+	margin-left: 16px;
+	
+	color: #FFF;
+	font-size: 14px;
+}
+
+.rating-container{
+	align-items: flex-end;
+}
+
 .content-categories{
 	display: flex;
 	flex-direction: column;
-	
-	padding: 0 66px; 
+
 }
 
 .hotel-element{
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-}
-
-.hotel-element{
-	padding: 31px 0;
 	
+	padding: 31px 66px;
 	border-bottom: 1px solid #ccc;
 }
 
