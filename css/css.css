@@ -1,7 +1,17 @@
 @font-face{
 	
 	font-family: 'Ptsans'; 
-	src: url(../fonts/ptsans.woff); 
+	src: url(../fonts/ptsans.woff);
+	
+	font-weight: normal;  
+}
+
+@font-face{
+	
+	font-family: 'Ptsans'; 	
+	src: url(../fonts/ptsansbold.woff);
+	
+	font-weight: bold;
   
 }
 
@@ -29,6 +39,10 @@ footer{
 	margin-left: auto;
 	
 	background-color: #FFF;
+}
+
+input:focus{
+	outline: none;	
 }
 
 header{
@@ -71,12 +85,46 @@ h1, h2, h3, h4{
 /****** menu ********/
 
 .sort-hotel{
-	padding: 0 66px;
+	padding: 15px 66px;
+	border-bottom: 1px solid #ccc;
+}
+
+.sort-hotel a{
+	color: #cacaca;
+	
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-hotel ul li:first-child{
+	display: inline-block;
+	width: 135px;
+	margin-right: 30px;
+	
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.sort-hotel ul li:not(first-child){
+	font-weight: 400;
+}
+
+.sort-hotel a.active{
+	color: #81b3d2;
+	
+	border-bottom: 1px solid #FFF;
 }
 
 nav ul{
 	padding-left: 6%;
 	padding-right: 6%;
+}
+
+nav a:hover{
+	color: #81b3d2;
+}
+
+nav a:active{
+	color: #dadada;
 }
 
 nav ul,
@@ -87,8 +135,15 @@ nav ul,
 	padding: 15.5px 0;
 }
 
-.sort-hotel ul li{
+nav a.active{
+	color: #766357;
+}
+
+.sort-hotel ul li:not(:first-child){
 	display: inline;
+	padding-right: 38px;
+	
+	font-size: 14px;
 }
 
 nav ul::after{
@@ -281,12 +336,36 @@ h2 .sub-heading{
 	border-radius: 0;
 }
 
+.hotel-input input[type="submit"]:hover{
+	background-color: #669ec0;
+}
+
+
+.hotel-input input[type="submit"]:active{
+	color: #94b9d2;
+	background-color: #5496bd;
+	
+	border: 0;
+}
+
+
 .hotel-descriprion .detailed{
 	padding: 5px;
 	
 	color: #FFF;
 	
 	background-color: #81b3d2;
+}
+
+.hotel-descriprion .detailed:hover{
+	
+	background-color: #669ec0;
+}
+
+.hotel-descriprion .detailed:active{
+	color: #94b9d2;
+	
+	background-color: #5496bd;
 }
 
 .hotel-descriprion .book{
@@ -297,9 +376,21 @@ h2 .sub-heading{
 	background-color: #766357;
 }
 
+.hotel-descriprion .book:hover{
+	background-color: #604e43;
+}
+
+.hotel-descriprion .book:active{
+	color: #928a85;
+	background-color: #503e33;
+}
+
 .filter-hotel-form{
 	display: flex;
+	align-items: center;
+	
 	justify-content: space-between;
+	height: inherit;
 }
 
 .first-screen,
@@ -375,7 +466,10 @@ third-screen{
 }
 
 .filter-hotel{
-	height: 273px;
+	
+	padding: 0 66px;
+	
+	height: 217px;
 	background-image: url(../img/categories_header.jpg);
 }
 
@@ -391,8 +485,15 @@ input[type="checkbox"] + label{
 }
 
 .rating-container{
+	height: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-container .raiting{
 	align-items: flex-end;
 }
+
 
 .content-categories{
 	display: flex;
@@ -411,11 +512,24 @@ input[type="checkbox"] + label{
 
 .hotel-descriprion{
 	margin-left: 30px;
+	height: 90px;
+	flex-grow: 2;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
 }
 
 .hotel-descriprion h3{
 	font-size: 21px;
 	font-weight: 900;
+}
+
+.star-container{
+	flex-grow: 1;
+}
+
+.hotel-descriprion span{
+	font-weight: 400;
 }
 
 .footer{
@@ -433,6 +547,53 @@ footer{
 	
 	height: 120px;
 	background-color: rgba(255, 255, 255,50);
+}
+
+.raiting-show{
+	padding: 8px 15px;
+	font-weight: 100;
+	color: #666666;
+	
+	background-color: #f2f2f2;
+}
+
+.sort-menu{
+	display: inline-block;
+}
+
+i.star:before{
+	content: "";
+	display: inline-block;
+    width: 18px;
+    height: 18px;
+	
+	background: url(../img/svg/star.svg) no-repeat;
+}
+
+i.icon-up-dir:before{
+	content: "";
+	display: inline-block;
+    width: 18px;
+    height: 18px;
+	
+	background: url(../img/svg/icon-up-dir.svg) no-repeat;
+}
+
+i.icon-down-dir:before{
+	content: "";
+	display: inline-block;
+    width: 18px;
+    height: 18px;
+	
+	background: url(../img/svg/icon-down-dir.svg) no-repeat;
+}
+
+h3 a:hover{
+	color: #81b3d2;
+}
+
+h3 a:active{
+	color: #cacaca;
 }
 
 .heshteg{
@@ -458,3 +619,35 @@ footer .social{
     background: #81b3d2;
     vertical-align: middle;	
 }
+
+.social:hover{
+	background: #669ec0;
+}
+
+.social:active{
+	background: #5496bd;
+}
+
+.social:active span{
+	opacity: 0.5;
+}
+
+.social span{
+	display: block;
+	width: 48px;
+	height: 48px;
+	background-size: 20px 20px;
+}
+
+.twitter{
+	background: url(../img/svg/twitter.svg) no-repeat center center;
+}
+
+.facebook{
+	background: url(../img/svg/fb-icon.svg) no-repeat center center;
+}
+
+.youtube{
+	background: url(../img/svg/youtube.svg) no-repeat center center;
+}
+
