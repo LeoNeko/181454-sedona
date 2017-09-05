@@ -85,7 +85,10 @@ h1, h2, h3, h4{
 /****** menu ********/
 
 .sort-hotel{
-	padding: 15px 66px;
+	display: flex;
+	justify-content: space-between;
+	
+	padding: 35px 66px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -127,12 +130,18 @@ nav a:active{
 	color: #dadada;
 }
 
-nav ul,
+nav ul{
+	list-style-type: none;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 15.5px;
+}
+
 .sort-hotel ul{
 	list-style-type: none;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 15.5px 0;
+	padding: 0;
 }
 
 nav a.active{
@@ -143,7 +152,7 @@ nav a.active{
 	display: inline;
 	padding-right: 38px;
 	
-	font-size: 14px;
+	font-size: 12px;
 }
 
 nav ul::after{
@@ -313,8 +322,19 @@ h2 .sub-heading{
 }
 
 .popup-form form{
-	padding: 0 55px 55px 55px;
+	padding: 55px 55px 55px 55px;
 }
+
+.popup-form input{
+	height: 38px;
+	width: auto;
+	
+	padding: 5px 35px 5px 12px;
+	border: 0;
+	
+	background-color: #f2f2f2;
+}
+
 
 .filter-hotel{
 	background: url(../img/categories_header.jpg);
@@ -324,6 +344,25 @@ h2 .sub-heading{
 	border: 0;
 }
 
+.hotel-input{
+	display: flex;
+	margin-bottom: 28px;	
+}
+
+.hotel-input input{
+	flex-grow: 1;
+}
+
+.hotel-input label{
+	width: 92px;
+	
+	align-self: center;
+	margin-right: 23px;
+}
+
+.hotel-input:nth-child(3){
+	margin-bottom: 55px;	
+}
 .hotel-input input[type="submit"]{
 	width: 455px;
 	height: 55px;
@@ -467,19 +506,17 @@ third-screen{
 
 .filter-hotel{
 	
-	padding: 0 66px;
+	padding: 30px 66px;
 	
-	height: 217px;
 	background-image: url(../img/categories_header.jpg);
 }
 
 legend{
 	color: #FFF;
+	margin-bottom: 28px;
 }
 
-input[type="checkbox"] + label{
-	margin-left: 16px;
-	
+input[type="checkbox"] + label{	
 	color: #FFF;
 	font-size: 14px;
 }
@@ -538,7 +575,7 @@ input[type="checkbox"] + label{
 }
 
 footer{
-	display: flex !important;
+	display: flex;
 	justify-content: space-around;
 	align-items: center;
 
@@ -548,6 +585,51 @@ footer{
 	height: 120px;
 	background-color: rgba(255, 255, 255,50);
 }
+
+input[type="checkbox"]{
+	display: none;
+	
+}
+
+input[type="checkbox"] + label{
+	position: relative;
+	padding-left: 30px;
+	line-height: 25px;
+	font-weight: 400;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	margin-bottom: 22px;
+}
+
+input[type="checkbox"]:last-child + label:last-child{
+	margin-bottom: 0;
+}
+
+input[type="checkbox"] + label::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: url(../img/svg/checkbox-off.svg) no-repeat;
+}
+
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:checked + label::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: url(../img/svg/checkbox-on.svg) no-repeat;
+}
+
+
 
 .raiting-show{
 	padding: 8px 15px;
@@ -572,19 +654,22 @@ i.star:before{
 
 i.icon-up-dir:before{
 	content: "";
+	position: relative;
 	display: inline-block;
     width: 18px;
     height: 18px;
 	
+	top: 10px;	
 	background: url(../img/svg/icon-up-dir.svg) no-repeat;
 }
 
 i.icon-down-dir:before{
 	content: "";
+	position: relative;
 	display: inline-block;
     width: 18px;
     height: 18px;
-	
+	top: 10px;
 	background: url(../img/svg/icon-down-dir.svg) no-repeat;
 }
 
