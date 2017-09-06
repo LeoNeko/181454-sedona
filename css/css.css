@@ -39,7 +39,8 @@ body {
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-input:focus{
+input:focus,
+button:focus{
 	outline: none;	
 }
 
@@ -295,10 +296,11 @@ h2 .sub-heading{
     position: absolute;
     z-index: 9999;
 
-    left: 50%;
-    margin-left: -285px;
+    margin-left: 315px;
 	
 	background-color: #FFF;
+	
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .trip-screen button{
@@ -340,12 +342,21 @@ h2 .sub-heading{
 	height: 38px;
 	width: auto;
 	
-	padding: 5px 35px 5px 12px;
-	border: 0;
+	padding: 3px 33px 3px 10px;
+	border: 2px solid #f2f2f2;
 	
 	background-color: #f2f2f2;
 }
 
+.popup-form input:focus{
+	background-color: #FFF;
+	border-color: #ebebeb;
+}
+
+.popup-form input:hover{
+	background-color: #ebebeb;
+	border-color: #ebebeb;
+}
 
 .filter-hotel{
 	background: url(../img/categories_header.jpg);
@@ -355,9 +366,55 @@ h2 .sub-heading{
 	border: 0;
 }
 
+.half-col{
+	width: 50%;
+}
+
 .hotel-input{
 	display: flex;
 	margin-bottom: 28px;	
+}
+
+.hotel-input:last-child{
+	margin-bottom: 0;
+}
+
+.hotel-input.data input,
+.hotel-input.data button{
+	display: block;
+	width: 38px;
+	height: 38px;
+	
+	
+	text-align: center;
+	padding: 5px 0;
+	flex-grow: 0;
+	border: 0;
+}
+
+.hotel-input.data button{
+	height: 48px;
+	
+	color: #a9a9a9;
+	font-size: 25px;
+	font-weight: 700;
+	background-color: #f2f2f2;
+}
+
+.hotel-input.data button:active{
+	color: #81b3d2;
+}
+
+.hotel-input.data button:hover{
+	color: #000000;
+}
+
+.hotel-input.data button:nth-child(4){
+	margin-right: 50px;
+}
+
+.hotel-input.data label:nth-child(5){
+	width: 45px;
 }
 
 .hotel-input input{
@@ -642,6 +699,11 @@ input[type="checkbox"]:checked + label::before{
 }
 
 
+.hotel-input .calendar{
+	position: absolute;
+	top: 14px;
+	right: 10px;
+}
 
 .raiting-show{
 	padding: 8px 15px;
@@ -696,6 +758,21 @@ h3 a:active{
 .heshteg{
 	font-size: 21px;
 	font-weight: 700;
+}
+
+.hotel-input.button input{
+	flex-grow: 1;
+	padding: 0;
+	
+}
+
+.input-container{
+	position: relative;
+	flex-grow: 1;
+}
+
+.input-container input{
+	width: 298px;
 }
 
 .heshteg,

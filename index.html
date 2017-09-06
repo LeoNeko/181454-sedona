@@ -82,26 +82,36 @@
   		<section class="trip-screen">
   			<h3>Заинтересовались?</h3>
   			<p>укажите предполагаемые поездки, и мы покажем вам лучше предложения гостниц в седоне</p>
-  			<button>Поиск гостиницы в Седоне</button>
+  			<button type="button">Поиск гостиницы в Седоне</button>
   		</section>
   		<section class="map">
   			<div class="popup-form">
   				<form method="post">
   					<div class="hotel-input">
   						<label>Дата заезда:</label>
-						<input type="text" value="24 апреля 2017">
+						<div class="input-container">
+							<input  type="text" value="24 апреля 2017">
+							<img class="calendar" src="img/svg/calendar.svg">
+						</div>
   					</div>
   					<div class="hotel-input">
   						<label>Дата выезда:</label>
-						<input type="text" value="4 июля 2017">
+  						<div class="input-container">
+							<input type="text" value="4 июля 2017">
+							<img class="calendar" src="img/svg/calendar.svg">
+						</div>
 					</div>
-  					<div class="hotel-input">
-  						<label>Взрослые:</label>
-  						<input type="" value="2">
-  						<label>Дети:</label>
-  						<input type="" value="2">
+  					<div class="hotel-input data">
+							<label>Взрослые:</label>
+							<button type="button">-</button>
+							<input type="" min="0" max="9" step="1" value="2">
+							<button type="button">+</button>
+  							<label>Дети:</label>
+  							<button type="button">-</button>
+  							<input type="" min="0" max="9" step="1" value="2">
+							<button type="button">+</button>
   					</div>
-  					<div class="hotel-input">
+  					<div class="hotel-input button">
   						<label class="visually-hidden">Найти</label>
   						<input type="submit" value="Найти">
   					</div>  					

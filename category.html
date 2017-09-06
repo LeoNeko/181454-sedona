@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/css.css">
   </head>
   <body>
+  	<div class="shadow-container">
 	<header>
 		<nav>
 			<ul>
@@ -23,15 +24,15 @@
 			<form class="filter-hotel-form">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
-					<input type="checkbox" checked><label>Бассейн</label><br>
-					<input type="checkbox"><label>Парковка</label><br>
-					<input type="checkbox"><label>WI-FI</label><br>
+					<input id="pool" type="checkbox" checked><label for="pool">Бассейн</label><br>
+					<input id="parking" type="checkbox"><label for="parking">Парковка</label><br>
+					<input id="WI-FI" type="checkbox"><label for="WI-FI">WI-FI</label><br>
 				</fieldset>
 				<fieldset>
 					<legend>Тип жилья:</legend>
-					<input type="checkbox" checked><label>Гостиница</label><br>
-					<input type="checkbox" checked><label>Мотель</label><br>
-					<input type="checkbox" checked><label>апартаменты</label><br>
+					<input id="hotel" accept=""type="checkbox" checked><label for="hotel">Гостиница</label><br>
+					<input id="motel" type="checkbox" checked><label for="motel">Мотель</label><br>
+					<input id="apartments" type="checkbox" checked><label for="apartments">Апартаменты</label><br>
 				</fieldset>
 				<fieldset>
 					<legend>Стоимость в сутки(Р):</legend>
@@ -135,5 +136,6 @@
 				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png"></a>	
 			</div>
 		</footer>
+		</div>
   </body>
 </html>
