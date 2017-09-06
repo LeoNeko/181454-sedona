@@ -701,8 +701,25 @@ input[type="checkbox"]:checked + label::before{
 
 .hotel-input .calendar{
 	position: absolute;
-	top: 14px;
+	top: 12px;
 	right: 10px;
+	
+	fill: #cacaca;
+	border: 0;
+	background: none;
+}
+
+
+.calendar a:active{
+	fill: #81b3d2;
+}
+
+.calendar{
+	fill: cacaca;
+}
+
+.calendar:hover{
+	fill: #000000;
 }
 
 .raiting-show{
@@ -773,6 +790,9 @@ h3 a:active{
 
 .input-container input{
 	width: 298px;
+	
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .heshteg,
