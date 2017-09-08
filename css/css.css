@@ -88,7 +88,7 @@ h1, h2, h3, h4{
 	display: flex;
 	justify-content: space-between;
 	
-	padding: 35px 66px;
+	padding: 30px 66px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -410,7 +410,7 @@ p.benefit-description.text-2{
 }
 
 .filter-hotel fieldset{
-	padding-left: 0;
+	padding-left: 5px;
 	min-width: 260px;
 	border: 0;
 }
@@ -549,9 +549,7 @@ p.benefit-description.text-2{
 }
 
 .filter-hotel-form{
-	display: flex;
-	align-items: center;
-	
+	display: flex;	
 	justify-content: space-between;
 	height: inherit;
 }
@@ -635,7 +633,7 @@ third-screen{
 }
 
 .filter-hotel{
-	min-height: 255px;
+	height: 218px;
 	padding: 0px 66px;
 	
 	background-image: url(../img/categories_header.jpg);
@@ -681,7 +679,7 @@ input[type="checkbox"]:checked:disabled + label::before{
 	justify-content: flex-start;
 	align-items: flex-start;
 	
-	padding: 31px 66px;
+	padding: 31px 71px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -784,7 +782,9 @@ input[type="checkbox"]:checked + label::before{
 
 .filter-range{
 	width: 330px;
-	margin: 50px auto;
+	margin-left: auto;
+	padding-top: 29px;
+	padding-bottom: 33px;
 	
 	color: #FFF;
 	text-transform: uppercase;
@@ -792,15 +792,17 @@ input[type="checkbox"]:checked + label::before{
 
 .filter-range-title{
 	margin-bottom: 9px;
+	padding-left: 8px;
 	
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 21px;
 }
 
 .price-controls{
 	position: relative;
-	height: 36px;
+	height: 32px;
+	width: 312px;
 	margin-bottom: 20px;
 	
 	font-size: 0;
