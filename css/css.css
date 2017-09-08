@@ -134,6 +134,14 @@ nav ul{
 	padding-right: 6%;
 }
 
+.outside{
+	width: 240px;
+}
+
+.inside{
+	width:  280px;
+}
+
 nav a:hover{
 	color: #81b3d2;
 }
@@ -228,13 +236,15 @@ h2 .sub-heading{
 	background-color: #81b3d2;
 }
 
+.enter-text-section{
+	margin-bottom: 50px;
+}
 
 .enter-text-section p{
 	width: 600px;
 	
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 50px;
 	
 	color: #333333;
 	font-weight: 300;
@@ -251,6 +261,9 @@ h2 .sub-heading{
 	margin-left: auto;
 	
 	text-align: center;
+	
+    line-height: 1em;
+    margin-bottom: 27px;
 }
 
 .benefit-title{
@@ -259,8 +272,17 @@ h2 .sub-heading{
 	padding-top: 48px;
 }
 
-.benefit-description{
-	width: 340px;
+p.benefit-description.text{
+	width: 300px;
+	line-height: 1.4em;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+p.benefit-description.text-2{
+	width: 320px;
+	line-height: 1.4em;
+	font-size: 14px;
 	font-weight: 100;
 }
 
@@ -277,26 +299,38 @@ h2 .sub-heading{
 	background-color: #eeeeee;
 }
 
+.third-screen .advantages p{
+	width: 260px;
+	
+	line-height: 1.5em;
+}
+
 .trip-screen{
 	position: relative;
 	padding-top: 56px;
+}
+
+
+.third-screen div.advantages{
+	padding: 50px 0 40px 0;
 }
 
 .trip-screen h3{
 	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 37px;
+	margin-bottom: 33px;
 	
 	font-size: 30px;
 	text-align: center;
 }
 
 .trip-screen p{
-	width: 400px;
+	width: 470px;
+    letter-spacing: 0.03em;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 53px;
+	margin-bottom: 48px;
 	
 	color: #333333;
 	font-size: 14px;
@@ -323,7 +357,7 @@ h2 .sub-heading{
 	width: 570px;
 	
 	font-size: 21px;
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 86px;
@@ -352,7 +386,7 @@ h2 .sub-heading{
 }
 
 .popup-form input{
-	height: 38px;
+	height: 30px;
 	width: auto;
 	
 	padding: 3px 33px 3px 10px;
@@ -398,7 +432,7 @@ h2 .sub-heading{
 .hotel-input.data button{
 	display: block;
 	width: 38px;
-	height: 38px;
+	/*height: 38px;*/
 	
 	font-weight: 400;
 	text-align: center;
@@ -407,9 +441,7 @@ h2 .sub-heading{
 	border: 0;
 }
 
-.hotel-input.data button{
-	height: 48px;
-	
+.hotel-input.data button{	
 	color: #a9a9a9;
 	font-size: 25px;
 	font-weight: 700;
@@ -446,7 +478,7 @@ h2 .sub-heading{
 }
 
 .hotel-input:nth-child(3){
-	margin-bottom: 55px;	
+	margin-bottom: 50px;	
 }
 .hotel-input input[type="submit"]{
 	width: 455px;
@@ -549,12 +581,12 @@ h2 .sub-heading{
 .third-screen{
 	display: flex;
 	justify-content: space-around;
-    align-items: center;
 }
 
 
 .description-advantages{
 	min-height: 325px;	
+	margin-bottom: 5px;
 }
 third-screen{
 	height: 255px;	
@@ -564,21 +596,23 @@ third-screen{
 .third-screen .advantages{
 	width: 33.33333%;
 	text-align: center;
-	padding: 67px 0px;
+	padding: 60px 0px;
 }
 
 .advantages img{
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 
 .advantages span{
 	display: block;
+	margin-bottom: 20px;
+	
 	text-align: center;
 	font-weight: 400;
 }
 
 .advantages p{
-	width: 320px;
+	width: 300px;
 	margin-right: auto;
 	margin-left: auto;
 	
@@ -593,7 +627,9 @@ third-screen{
 	width: 140px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 	
+	line-height: 1em;
 	text-align: center;
 }
 
@@ -737,7 +773,7 @@ input[type="checkbox"]:checked + label::before{
 
 .hotel-input .calendar{
 	position: absolute;
-	top: 12px;
+	top: 8px;
 	right: 10px;
 	
 	fill: #cacaca;
@@ -1038,7 +1074,7 @@ footer .social{
 }
 
 .map{
-	height: 593px;
+	min-height: 593px;
 }
 
 .twitter{
