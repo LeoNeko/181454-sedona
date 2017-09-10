@@ -388,11 +388,12 @@ p.benefit-description.text-2{
 	outline: 0;
 }
 .popup-form form{
-	padding: 53px 55px 55px 55px;
+	padding: 55px 55px 55px 55px;
 }
 
 .popup-form input{
-	height: 28px;
+	height: 26px;
+	font-family: Ptsans;
 	width: auto;
 	
 	padding: 3px 33px 3px 8px;
@@ -444,7 +445,7 @@ p.benefit-description.text-2{
 	
 	font-weight: 700;
 	text-align: center;
-	padding: 5px 0;
+	padding: 6px 0;
 	flex-grow: 0;
 	border: 0;
 }
@@ -481,7 +482,7 @@ p.benefit-description.text-2{
  label{
 	width: 92px;
 	padding-left: 2px;
-    padding-top: 9px;
+    padding-top: 7px;
     margin-right: 21px;
 }
 
@@ -1048,7 +1049,7 @@ h3 a:active{
 	flex-grow: 1;
 	padding: 0;
 	
-	font-size: 18.5px;
+	font-size: 21px;
 }
 
 .input-container{
