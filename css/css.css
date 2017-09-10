@@ -488,9 +488,12 @@ p.benefit-description.text-2{
 .hotel-input:nth-child(3){
 	margin-bottom: 55px;	
 }
+
 .hotel-input input[type="submit"]{
 	width: 455px;
 	height: 58px;
+	font-size: 20px;
+	font-weight: 500;
 	
 	color: #FFF;
 	text-transform: uppercase;
@@ -517,7 +520,7 @@ p.benefit-description.text-2{
 	display: inline-block;
 	padding: 1px 16px;
 	height: 25px;
-	margin-right: 2px;
+	margin-right: 4px;
 	
 	text-align: center;
 	color: #FFF;
@@ -743,6 +746,7 @@ input[type="checkbox"]{
 input[type="checkbox"] + label{
 	position: relative;
 	padding-left: 40px;
+	padding-top: 0;
 	line-height: 21px;
 	font-weight: 400;
 	display: inline-block;
@@ -801,7 +805,7 @@ input[type="checkbox"]:checked + label::before{
 
 .filter-range-title{
 	margin-bottom: 10px;
-	
+	padding-left: 3px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 21px;
@@ -821,7 +825,7 @@ input[type="checkbox"]:checked + label::before{
 
 .price-controls label{
 	display: inline-block;
-	
+	padding-top: 0;
 	font-size: 14px;
 	line-height: 33px;
 	vertical-align: top;
@@ -846,6 +850,10 @@ input[type="checkbox"]:checked + label::before{
 .price-controls .max-price{
 	width: 81px;
 	padding-left: 65px;
+}
+
+.price-controls .max-price{
+	padding-left: 45px;
 }
 
 .price-controls input{
@@ -902,8 +910,8 @@ input[type="checkbox"]:checked + label::before{
 
 .btn-transparent{
 	display: block;
-	padding: 5px 34px;
-	margin-left: 84px;
+	padding: 5px 33px;
+	margin-left: 87px;
 	
 	font-size: 14px;
 	line-height: 21px;
@@ -946,7 +954,7 @@ button.calendar:active{
 }
 
 .raiting-show{
-	padding: 3px 14px;
+	padding: 3px 13px;
 	font-weight: 100;
 	color: #666666;
 	
@@ -960,8 +968,11 @@ button.calendar:active{
 i.star:before{
 	content: "";
 	display: inline-block;
-    width: 18px;
-    height: 18px;
+	position: relative;
+	top: -2px;
+	left: 4px;
+    width: 20px;
+    height: 20px;
 	
 	background: url(../img/svg/star.svg) no-repeat;
 }
@@ -1014,7 +1025,7 @@ h3 a:active{
 .sochial-links{
 	position: relative;
     top: -3px;
-    left: 6px;
+    left: 4px;
 	width: 155px;
 	margin-left: auto;
     margin-right: auto;
@@ -1023,10 +1034,14 @@ h3 a:active{
 
 .academy-link{
 	position: relative;
-    left: -32px;
+    left: -29px;
     top: -2px;
-	width: 195px;
-	padding-left: 55px;
+	width: 199px;
+	padding-left: 45px;
+}
+
+.academy-link .by{
+	margin-right: 9px;
 }
 
 .hotel-input.button input{
@@ -1076,6 +1091,9 @@ a:active svg{
 
 .academy-link svg{
 	width: 115px;
+	position: relative;
+    top: 2px;
+    left: -2px;
 }
 
 footer .social{
@@ -1110,6 +1128,10 @@ footer .social{
 	display: flex;
 }
 
+.minus{
+	position: relative;
+	top: -2px;
+}
 .twitter{
 	background: url(../img/svg/twitter.svg) no-repeat center center;
 }
