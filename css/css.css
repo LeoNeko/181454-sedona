@@ -41,7 +41,7 @@ body {
 }
 
 button{
-	font-family: Ptsans;
+	font-family: Ptsans, Arial, sans-serif;
 }
 
 input:focus,
@@ -393,7 +393,7 @@ p.benefit-description.text-2{
 
 .popup-form input{
 	height: 26px;
-	font-family: Ptsans;
+	font-family: Ptsans, Arial, sans-serif;
 	width: auto;
 	
 	padding: 3px 33px 3px 8px;
@@ -480,10 +480,10 @@ p.benefit-description.text-2{
 }
 
  label{
-	width: 92px;
+	width: 100px;
 	padding-left: 2px;
     padding-top: 7px;
-    margin-right: 21px;
+    margin-right: 16px;
 }
 
 .hotel-input:nth-child(3){
