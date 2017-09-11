@@ -277,8 +277,10 @@ h2 .sub-heading{
     margin-bottom: 22px;
 }
 
-.first-screen-description h2{
+.first-screen-description h2,
+.second-screen-description h2{
 	line-height: 21px;
+	font-weight: bold;
 }
 
 .benefit-title{
@@ -311,6 +313,10 @@ p.benefit-description.text-2{
 	padding-top: 47px;
 	padding-bottom: 43px;
 	background-color: #eeeeee;
+}
+
+.third-screen span{
+	font-weight: 400;
 }
 
 .third-screen .advantages p{
@@ -363,7 +369,7 @@ p.benefit-description.text-2{
 	width: 570px;
 	
 	font-size: 21px;
-	font-weight: 500;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 26px;
@@ -502,7 +508,7 @@ p.benefit-description.text-2{
 	width: 455px;
 	height: 58px;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: bold;
 	
 	color: #FFF;
 	text-transform: uppercase;
