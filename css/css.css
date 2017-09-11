@@ -873,6 +873,7 @@ input[type="checkbox"]:checked + label::before{
 
 .price-controls input{
 	width: 33px;
+	height: 33px;
 	margin: 0;
 	
 	color: inherit;
