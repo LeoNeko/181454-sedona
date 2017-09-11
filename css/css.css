@@ -396,7 +396,7 @@ p.benefit-description.text-2{
 	font-family: Ptsans, Arial, sans-serif;
 	width: auto;
 	
-	padding: 3px 33px 3px 8px;
+	padding: 4px 33px 3px 10px;
 	border: 2px solid #f2f2f2;
 	
 	background-color: #f2f2f2;
@@ -410,6 +410,14 @@ p.benefit-description.text-2{
 .popup-form input:hover{
 	background-color: #ebebeb;
 	border-color: #ebebeb;
+}
+
+.people{
+	padding-left: 1px;
+}
+
+.children{
+	width: 50px;
 }
 
 .filter-hotel{
@@ -458,7 +466,6 @@ p.benefit-description.text-2{
 }
 
 
-
 .hotel-input.data button:hover{
 	color: #000000;
 }
@@ -472,7 +479,7 @@ p.benefit-description.text-2{
 }
 
 .hotel-input.data label:nth-child(5){
-	width: 45px;
+	width: 50px;
 }
 
 .hotel-input input{
@@ -480,10 +487,11 @@ p.benefit-description.text-2{
 }
 
  label{
-	width: 100px;
+	width: 96px;
 	padding-left: 2px;
     padding-top: 7px;
     margin-right: 16px;
+	font-weight: 700;
 }
 
 .hotel-input:nth-child(3){
@@ -1061,7 +1069,7 @@ h3 a:active{
 	width: 298px;
 	
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .heshteg,
