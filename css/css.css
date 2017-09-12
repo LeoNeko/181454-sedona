@@ -509,7 +509,7 @@ p.benefit-description.text-2{
 	margin-bottom: 55px;	
 }
 
-.hotel-input input[type=submit]{
+.hotel-input input[type="submit"]{
 	width: 455px;
 	height: 58px;
 	font-size: 20px;
@@ -523,12 +523,12 @@ p.benefit-description.text-2{
 	border-radius: 0;
 }
 
-.hotel-input input[type=submit]:hover{
+.hotel-input input[type="submit"]:hover{
 	background-color: #669ec0;
 }
 
 
-.hotel-input input[type=submit]:active{
+.hotel-input input[type="submit"]:active{
 	color: #94b9d2;
 	background-color: #5496bd;
 	
@@ -675,16 +675,16 @@ legend{
 	margin-bottom: 24px;
 }
 
-input[type=checkbox] + label{	
+input[type="checkbox"] + label{	
 	color: #FFF;
 	font-size: 14px;
 }
 
-input[type=checkbox]:disabled + label::before{
+input[type="checkbox"]:disabled + label::before{
 	background: url("../img/svg/checkbox-off-dis.svg") no-repeat;
 }
 
-input[type=checkbox]:checked:disabled + label::before{
+input[type="checkbox"]:checked:disabled + label::before{
 	background: url("../img/svg/checkbox-on-dis.svg") no-repeat;
 }
 
@@ -755,12 +755,12 @@ footer{
 	background-color: rgba(255, 255, 255,0.7);
 }
 
-input[type=checkbox]{
+input[type="checkbox"]{
 	display: none;
 	
 }
 
-input[type=checkbox] + label{
+input[type="checkbox"] + label{
 	position: relative;
 	padding-left: 40px;
 	padding-top: 0;
@@ -772,11 +772,11 @@ input[type=checkbox] + label{
 	margin-bottom: 25px;
 }
 
-input[type=checkbox]:last-child + label:last-child{
+input[type="checkbox"]:last-child + label:last-child{
 	margin-bottom: 0;
 }
 
-input[type=checkbox] + label::before{
+input[type="checkbox"] + label::before{
 	content: "";
 	display: block;
 	position: absolute;
@@ -787,8 +787,8 @@ input[type=checkbox] + label::before{
 	background: url("../img/svg/checkbox-off.svg") no-repeat;
 }
 
-input[type=checkbox]:checked + label::before,
-input[type=checkbox]:checked + label::before{
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:checked + label::before{
 	content: "";
 	display: block;
 	position: absolute;
