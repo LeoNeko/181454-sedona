@@ -1,5 +1,4 @@
 @font-face{
-	
 	font-family: "Ptsans"; 
 	src: url("../fonts/ptsans.woff");
 	
@@ -7,7 +6,6 @@
 }
 
 @font-face{
-	
 	font-family: "Ptsans"; 	
 	src: url("../fonts/ptsansbold.woff");
 	
@@ -62,7 +60,6 @@ h1, h2, h3, h4{
 	margin: 0;
 }
 
-
 .jumbotron{
 	margin-bottom: 53px;	
 }
@@ -76,7 +73,6 @@ h1, h2, h3, h4{
 	margin-right: auto;
 	padding-bottom: 14px;
 }
-
 
 .visually-hidden{
   position: absolute; 
@@ -223,9 +219,8 @@ header img{
 	top: 0;
 	left: 531px;
 }
-
-
 /********** main ********/
+
 h1 .heading{
 	font-size: 28px;
 	line-height: 32px;
@@ -257,8 +252,8 @@ h2 .sub-heading{
 .enter-text-section p{
 	width: 600px;
 	
-	margin: 15px auto;
-	line-height: 24px
+	margin: 14px auto;
+	line-height: 26px;
 	
 	color: #333333;
 	font-weight: 300;
@@ -538,8 +533,8 @@ p.benefit-description.text-2{
 
 .hotel-descriprion .detailed{
 	display: inline-block;
-	padding: 1px 16px;
-	height: 25px;
+	padding: 3px 16px;
+	line-height: 21px;
 	margin-right: 4px;
 	
 	text-align: center;
@@ -560,9 +555,9 @@ p.benefit-description.text-2{
 
 .hotel-descriprion .book{
 	display: inline-block;
-	padding: 1px 17px;
-	height: 25px;
-	margin-right: 2px;
+	padding: 3px 17px;
+	line-height: 21px;
+	margin-right: 4px;
 	
 	text-align: center;
 	color: #FFF;
@@ -757,7 +752,6 @@ footer{
 
 input[type="checkbox"]{
 	display: none;
-	
 }
 
 input[type="checkbox"] + label{
