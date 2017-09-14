@@ -31,11 +31,7 @@ body {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-button {
-	font-family: Ptsans, Arial, sans-serif;
-}
-
-header {
+.header {
 	position: relative;
 }
 
@@ -115,7 +111,7 @@ a {
 	border-bottom: 1px solid #FFF;
 }
 
-nav ul {
+.nav ul {
 	padding-left: 6%;
 	padding-right: 6%;
 }
@@ -128,15 +124,15 @@ nav ul {
 	width: 280px;
 }
 
-nav a:hover {
+.nav a:hover {
 	color: #81b3d2;
 }
 
-nav a:active {
+.nav a:active {
 	color: #dadada;
 }
 
-nav ul {
+.nav ul {
 	list-style-type: none;
 	text-transform: uppercase;
 	line-height: 26px;
@@ -155,7 +151,7 @@ nav ul {
 	line-height: 18px;
 }
 
-nav a.active {
+.nav a.active {
 	color: #766357;
 }
 
@@ -169,20 +165,20 @@ nav a.active {
 	padding-right: 36px;
 }
 
-nav ul::after {
+.nav ul::after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-nav ul {
+.nav ul {
 	display: flex;
 	justify-content: flex-start;
 	padding-left: 6%;
 	padding-right: 6%;
 }
 
-nav a {
+.nav a {
 	font-weight: 700;
 }
 
@@ -205,19 +201,7 @@ header img {
 
 /********** main ********/
 
-
-/*
-h1{
-	padding: 0;
-	margin: 0;
-	font-size: 28px;
-	line-height: 32px;
-	color: #FFF;
-	font-weight: 700;
-}
-*/
-
-h2 .sub-heading {
+.sub-heading {
 	font-size: 16px;
 	line-height: 18px;
 	color: black;
@@ -272,13 +256,13 @@ h2 .sub-heading {
 	padding-top: 48px;
 }
 
-p.benefit-description.text {
+.benefit-description.text {
 	width: 300px;
 	font-size: 14px;
 	font-weight: 100;
 }
 
-p.benefit-description.text-2 {
+.benefit-description.text-2 {
 	width: 320px;
 	font-size: 14px;
 	font-weight: 100;
@@ -341,6 +325,10 @@ p.benefit-description.text-2 {
 	margin-left: 315px;
 	background-color: #FFF;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-form-hidden {
+	display: none;
 }
 
 .trip-screen button {
@@ -407,6 +395,7 @@ p.benefit-description.text-2 {
 
 .filter-hotel {
 	background: url("../img/categories_header.jpg");
+	background-size: cover;
 }
 
 .filter-hotel fieldset {
@@ -471,7 +460,7 @@ p.benefit-description.text-2 {
 	flex-grow: 1;
 }
 
-label {
+.label {
 	width: 96px;
 	padding-left: 2px;
 	padding-top: 7px;
@@ -636,9 +625,10 @@ label {
 	padding: 27px 72px;
 	padding-bottom: 7px;
 	background-image: url("../img/categories_header.jpg");
+	background-size: cover;
 }
 
-legend {
+.filter-hotel-form legend {
 	color: #FFF;
 	font-size: 16px;
 	line-height: 21px;
@@ -826,10 +816,6 @@ input[type="checkbox"]:checked+label::before {
 	padding-left: 65px;
 }
 
-.price-controls .max-price {
-	padding-left: 49px;
-}
-
 .price-controls input {
 	width: 33px;
 	height: 33px;
@@ -888,6 +874,7 @@ input[type="checkbox"]:checked+label::before {
 	margin-left: 87px;
 	font-size: 14px;
 	line-height: 21px;
+	font-family: Ptsans, Arial, sans-serif;
 	color: #fff;
 	text-transform: uppercase;
 	background: transparent;
@@ -906,11 +893,11 @@ input[type="checkbox"]:checked+label::before {
 	fill: cacaca;
 }
 
-button.calendar:hover {
+.calendar:hover {
 	fill: #000000;
 }
 
-button.calendar:active {
+.calendar:active {
 	fill: #81b3d2;
 }
 
@@ -938,7 +925,7 @@ button.calendar:active {
 	vertical-align: baseline;
 }
 
-i.star:before {
+.star:before {
 	content: "";
 	display: inline-block;
 	vertical-align: baseline;
@@ -977,11 +964,11 @@ i.star:before {
 	fill: #81b3d2;
 }
 
-h3 a:hover {
+.title-hotel a:hover {
 	color: #81b3d2;
 }
 
-h3 a:active {
+.title-hotel a:active {
 	color: #cacaca;
 }
 
@@ -1045,11 +1032,11 @@ h3 a:active {
 	font-weight: 400;
 }
 
-a:hover svg {
+.academy-link:hover svg {
 	fill: #81b3d2;
 }
 
-a:active svg {
+.academy-link:active svg {
 	fill: #bdbbbc;
 }
 
