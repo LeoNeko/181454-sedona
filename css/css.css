@@ -432,6 +432,12 @@ a {
 	border: 0;
 }
 
+.hotel-input.data input {
+	padding: 4px 0;
+	border-top: 2px solid #f2f2f2;
+	border-bottom: 2px solid #f2f2f2;
+}
+
 .hotel-input.data button {
 	font-family: Ptsans, Arial, sans-serif;
 	color: #a9a9a9;
