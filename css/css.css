@@ -192,7 +192,7 @@ a {
 	text-align: right;
 }
 
-header img {
+.header img {
 	position: absolute;
 	top: 0;
 	left: 531px;
@@ -695,10 +695,11 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .footer {
 	position: relative;
+	height: 120px;
 	width: 1200px;
 }
 
-footer {
+.footer-container {
 	position: absolute;
 	width: 1060px;
 	bottom: 0;
@@ -795,7 +796,6 @@ input[type="checkbox"]:checked+label::before {
 	padding-top: 0;
 	font-size: 14px;
 	line-height: 33px;
-	vertical-align: top;
 	cursor: pointer;
 }
 
@@ -1052,7 +1052,7 @@ input[type="checkbox"]:checked+label::before {
 	left: -2px;
 }
 
-footer .social {
+.footer-container .social {
 	display: inline-block;
 	width: 45px;
 	height: 48px;
