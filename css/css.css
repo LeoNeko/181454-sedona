@@ -318,12 +318,19 @@ a {
 	text-align: center;
 }
 
-
-@keyframes bounce{
-	0% { transform: translateX(2000px);}
-	70% { transform: translateX(-30px);}
-	90% { transform: translateX(10px);}
-	100% { transform: translateX(0);}
+@keyframes bounce {
+	0% {
+		transform: translateX(2000px);
+	}
+	70% {
+		transform: translateX(-30px);
+	}
+	90% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 .popup-form {
@@ -724,7 +731,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	justify-content: space-around;
 	height: 48px;
 	background-color: rgba(255, 255, 255, 0.7);
-	
 	z-index: 9999;
 }
 
@@ -1102,7 +1108,7 @@ input[type="checkbox"]:checked+label::before {
 	position: relative;
 }
 
-.map iframe{
+.map iframe {
 	z-index: 99;
 }
 
